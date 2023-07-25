@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<title> login page </title>
+</head>
+<body bgcolor="powderblue">
+	<center>
+		<h1> assignment 1</h1>
+		<form>
+		<h1>student login form </h1>
+		<label> username :</lable>
+		<input type="text" id="uname" name="text"> <br/> <br/>
+		<lable> password :</label>
+		<input type="password" id="pass" name="password" maxlength="8"> <br/><br/> <button type="submit" onclick="checkLogin()"> Login</button>
+		</form>
+	</center>
+<script>
+	function checkLogin()
+{
+	var u = document.getElementById('uname').value;
+	var p = document.getElementById('pass').value;
+	
+	if(u == "admin" && p == "bca123")
+	{
+		alert("login successful");
+	}
+	else
+	{
+		alert("login unsuccessful");
+	}
+}
+</script>
+</body>
+</html>
